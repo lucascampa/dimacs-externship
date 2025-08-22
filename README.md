@@ -1,0 +1,69 @@
+# DIMEX
+
+Dimex is a library created for all the utilities related to the Rutgers MBS Summer 2025 DIMACS externship.
+
+The project aimed to demonstrate whether interpretable Machine Learning models are able to reach a satisfying level of performance relative to black box models when ran on tabular data. The performance of the interpretable algorithm SPLIT ([paper](https://arxiv.org/abs/2502.15988), [repository](https://github.com/VarunBabbar/SPLIT-ICML/)) was benchmarked against that of XGBoost.
+
+## Features & Workflow
+
+- **Preprocessing**: Missing-value cleaning, label binarization, categorical encoding, SMOTE, and undersampling
+- **XGBoost toolkit**: Training, model metadata, feature selection, and predictions
+- **SPLIT toolkit**: Training, model metadata, and predictions
+
+1. Preprocess the data
+2. SPLIT first iterations and fine-tuning
+3. Feature selection with XGBoost
+4. Final SPLIT iteration
+5. Model comparison
+
+## Installation
+
+Done with Windows Subsystem for Linux. Mac and Linux should be similar.
+```bash
+cd ~
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+source ~/.bashrc
+conda create -n py31012 python=3.10.12
+conda activate py31012
+conda install -c conda-forge libgcc-ng libstdcxx-ng  
+sudo apt update
+sudo apt install -y build-essential cmake ninja-build
+sudo apt install -y libtbb-dev pkg-config
+sudo apt install -y libgmp-dev
+mkdir -p ~/projects
+cp -r "/mnt/c/directory/where/SPLIT-ICML/has/been/cloned/to" ~/projects/
+cd ~/projects/SPLIT-ICML-main
+pip install --upgrade pip
+pip install split/
+pip install xgboost
+pip install imbalanced-learn
+```
+
+## Usage
+```python
+import dimex as dx
+
+# Clean, encode, and binarize the data
+dataset_clean, dataset_missing_stats, dataset_clean_filename = dx.clean_missing('your_data.csv')
+dataset_encoded, dataset_encoded_filename = dx.binarize_encode(dataset_clean_filename, 'non-binarized class 1', 'non-binarized class 2')
+
+# Split between train and test
+x_train, x_test, y_train, y_test = dx.split_dataset(dataset_encoded, test_size=0.7, random_state=42)
+
+# Train models
+xgb_model, xgb_size, runtime = dx.train_xgb(x_train, y_train)
+split_model, tree, meta = dx.train_split(x_train, y_train, 2, 5, 0.01)
+
+# Evaluate
+xgb_pred, xgb_acc = dx.prediction_xgb(xgb_model, x_test, y_test)
+dx.cm(y_test, xgb_pred)
+split_pred = dx.prediction_split(split_model, x_test, y_test)
+dx.cm(y_test, split_pred[0], cmap='Purples')
+```
+
+Refer to the notebooks for a more detailed guide.
+
+## References
+
+Babbar, V., McTavish, H., Rudin, C., Seltzer, M. (2025). Near-Optimal Decision Trees in a SPLIT Second. arXiv preprint arXiv:2502.15988
