@@ -1,5 +1,7 @@
 \# Setup instructions
 
+
+
 Steps for running the notebooks in this repo, as well as experimenting with the dimex library I created. The \[SPLIT](https://github.com/VarunBabbar/SPLIT-ICML/) library installation (detailed further) is required.
 
 
@@ -12,11 +14,15 @@ Steps for running the notebooks in this repo, as well as experimenting with the 
 
 \## 1. WSL (Windows Subsystem for Linux)
 
+
+
 \- Control Panel → Turn Windows features on or off → Make sure Windows Subsystem for Linux is enabled (may need to restart device)
 
 
 
 \## 2. Miniconda
+
+
 
 ```bash
 
@@ -34,6 +40,8 @@ source ~/.bashrc
 
 \## 3. Create the environment
 
+
+
 ```bash
 
 conda env create -f environment.yml
@@ -45,6 +53,8 @@ conda activate dimex-env
 
 
 \## 4. Install system dependencies
+
+
 
 ```bash
 
@@ -64,6 +74,8 @@ sudo apt install -y libgmp-dev
 
 \## 5. Clone the SPLIT repository
 
+
+
 ```bash
 
 git clone https://github.com/VarunBabbar/SPLIT-ICML.git
@@ -73,6 +85,8 @@ git clone https://github.com/VarunBabbar/SPLIT-ICML.git
 
 
 \## 6. Copy the SPLIT-ICML folder to Linux
+
+
 
 ```bash
 
@@ -90,6 +104,8 @@ pip install split/
 
 \## 7. Install SPLIT
 
+
+
 ```bash
 
 pip install --upgrade pip
@@ -101,6 +117,8 @@ pip install split/
 
 
 \## 8. Verify installation
+
+
 
 ```bash
 
