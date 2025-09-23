@@ -16,6 +16,6 @@ from .reporting import cm
 
 # Public API: expose core functions for external use
 __all__ = ["midrange_undersample", "smote", "clean_missing", "split_dataset", "balance_stats", "binarize_labels", "str_to_num", "binarize_encode",
-           "train_xgb", "sort_by_gain", "cumulative_gain", "size", "feature_importance", "prediction_xgb"
+           "train_xgb", "sort_by_gain", "cumulative_gain", "size", "feature_importance", "prediction_xgb",
            "train_split", "n_leaves", "prediction_split", "binarized_features",
            "cm"]
