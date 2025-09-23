@@ -1,0 +1,12 @@
+name: dimex-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.12
+  - pandas=2.3.0
+  - imbalanced-learn=0.13.0
+  - imbalanced-learn=1.6.1
+  - matplotlib=3.10.3
+  - xgboost=3.0.2
+  - jupyter
