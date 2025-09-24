@@ -54,7 +54,8 @@ dx.cm(y_test, split_pred[0], cmap='Purples')
 Refer to the notebooks for a more detailed guide.
 
 ## Results
-Representative outcomes (3 random seeds) comparing SPLIT against XGBoost on the Airline Passenger Satisfaction dataset: ![Results](results/Results.png)
+Representative outcomes (3 random seeds) comparing SPLIT against XGBoost on the Airline Passenger Satisfaction dataset:
+![Results](results/Results.png)
 
 ## References
 Babbar, V., McTavish, H., Rudin, C., Seltzer, M. (2025). Near-Optimal Decision Trees in a SPLIT Second. arXiv preprint arXiv:2502.15988
