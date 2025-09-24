@@ -20,7 +20,7 @@ The project aimed to demonstrate whether interpretable Machine Learning models a
 ```
 ├── airline-passenger-satisfaction/ # Dataset used
 ├── dimex/
-├── notebooks/ # Notebooks running the dimex with different seed values
+├── notebooks/ # Notebooks running dimex with different seed values
 ├── environment.yml # Conda environment file (instead of requirements.txt)
 ├── LICENSE
 ├── README.md
