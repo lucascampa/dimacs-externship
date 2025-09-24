@@ -16,29 +16,20 @@ The project aimed to demonstrate whether interpretable Machine Learning models a
 4. Final SPLIT iteration
 5. Model comparison
 
+## Project structure
+```
+├── airline-passenger-satisfaction/ # Dataset used
+├── dimex/
+├── notebooks/ # Notebooks running the dimex with different seed values
+├── environment.yml # Conda environment file (instead of requirements.txt)
+├── LICENSE
+├── README.md
+└── SETUP.md
+```
+
 ## Installation
 
-Done with Windows Subsystem for Linux. Mac and Linux should be similar.
-```bash
-cd ~
-wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash Miniconda3-latest-Linux-x86_64.sh
-source ~/.bashrc
-conda create -n py31012 python=3.10.12
-conda activate py31012
-conda install -c conda-forge libgcc-ng libstdcxx-ng  
-sudo apt update
-sudo apt install -y build-essential cmake ninja-build
-sudo apt install -y libtbb-dev pkg-config
-sudo apt install -y libgmp-dev
-mkdir -p ~/projects
-cp -r "/mnt/c/directory/where/SPLIT-ICML/has/been/cloned/to" ~/projects/
-cd ~/projects/SPLIT-ICML-main
-pip install --upgrade pip
-pip install split/
-pip install xgboost
-pip install imbalanced-learn
-```
+See [SETUP.md](SETUP.md) for full installation instructions.
 
 ## Usage
 ```python
