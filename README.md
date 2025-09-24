@@ -1,7 +1,9 @@
 # DIMEX
 Dimex is a library created for all the utilities related to the Rutgers MBS Summer 2025 DIMACS externship.
 
-The project aimed to demonstrate whether interpretable Machine Learning models are able to reach a satisfying level of performance relative to black box models when ran on tabular data. The performance of the interpretable algorithm SPLIT ([paper](https://arxiv.org/abs/2502.15988), [repository](https://github.com/VarunBabbar/SPLIT-ICML/)) was benchmarked against that of XGBoost.
+An externship is a project facilitated by the Rutgers University MBS program, in which students inside a company under an academic capacity.
+
+In this project, I worked with DIMACS — Rutgers' Center for Discrete Mathematics and Theoretical Computer Science. Our aim was to demonstrate whether interpretable Machine Learning models are able to reach a satisfying level of performance relative to black box models when ran on tabular data. The performance of the interpretable algorithm SPLIT ([paper](https://arxiv.org/abs/2502.15988), [repository](https://github.com/VarunBabbar/SPLIT-ICML/)) was benchmarked against that of XGBoost.
 
 ## Features & Workflow
 - **Preprocessing**: Missing-value cleaning, label binarization, categorical encoding, SMOTE, and undersampling
