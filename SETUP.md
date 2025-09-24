@@ -1,5 +1,5 @@
 # Setup instructions
-Steps for running the notebooks in this repo, as well as experimenting with the dimex library I created. The [SPLIT](https://github.com/VarunBabbar/SPLIT-ICML/) library installation (detailed further below) is required.
+Steps for running the notebooks in this repo, as well as experimenting with the dimex library I created.
 
 - **Windows** users must enable WSL (step #1)
 - **Mac/Linux** → skip step #1
@@ -51,8 +51,14 @@ pip install --upgrade pip
 pip install split/
 ```
 
-## 8. Verify installation
+## 8. Install Dimex
+```bash
+pip install -e .
+```
+
+## 9. Verify installations
 ```bash
 python -c "import split; print('SPLIT installed successfully')"
+python -c "import dimex; print('Dimex installed successfully')"
 ```
 
