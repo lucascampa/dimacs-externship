@@ -1,5 +1,5 @@
 # Setup instructions
-Steps for running the notebooks in this repo, as well as experimenting with the dimex library I created. The [SPLIT](https://github.com/VarunBabbar/SPLIT-ICML/) library installation (detailed further) is required.
+Steps for running the notebooks in this repo, as well as experimenting with the dimex library I created. The [SPLIT](https://github.com/VarunBabbar/SPLIT-ICML/) library installation (detailed further below) is required.
 
 - **Windows** users must enable WSL (step #1)
 - **Mac/Linux** → skip step #1
@@ -7,7 +7,7 @@ Steps for running the notebooks in this repo, as well as experimenting with the 
 
 
 ## 1. WSL (Windows Subsystem for Linux)
-- Control Panel → Turn Windows features on or off → Make sure Windows Subsystem for Linux is enabled (may need to restart device)
+Control Panel → Turn Windows features on or off → Make sure Windows Subsystem for Linux is enabled (may need to restart device)
 
 ## 2. Miniconda
 ```bash
