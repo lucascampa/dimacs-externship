@@ -55,6 +55,7 @@ Refer to the notebooks for a more detailed guide.
 
 ## Results
 Representative outcomes (3 random seeds) comparing SPLIT against XGBoost on the Airline Passenger Satisfaction dataset:
+
 ![Results](results/Results.png)
 
 ## References
