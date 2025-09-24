@@ -7,7 +7,7 @@ Steps for running the notebooks in this repo, as well as experimenting with the 
 
 
 ## 1. WSL (Windows Subsystem for Linux)
-Control Panel → Turn Windows features on or off → Make sure Windows Subsystem for Linux is enabled (may need to restart device)
+Control Panel → Turn Windows features on or off → Make sure Windows Subsystem for Linux is enabled (may need to restart device) → Search `wsl` and run it
 
 ## 2. Miniconda
 ```bash
