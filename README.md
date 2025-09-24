@@ -21,9 +21,11 @@ The project aimed to demonstrate whether interpretable Machine Learning models a
 ├── notebooks/ # Notebooks running dimex with different seed values
 ├── results/ # Comparison table of the different results from running XGBoost and SPLIT using different parameters and seed values
 ├── environment.yml # Conda environment file (instead of requirements.txt)
+├── .gitignore
 ├── LICENSE
 ├── README.md
-└── SETUP.md
+├── SETUP.md # Setup guide
+└── setup.py # Run this to install dimex
 ```
 
 ## Installation
