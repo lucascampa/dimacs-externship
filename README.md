@@ -1,5 +1,5 @@
 # DIMEX
-Dimex is a library created for all the utilities related to the Rutgers MBS Summer 2025 DIMACS externship.
+Dimex is a library I created for all the utilities related to the Rutgers MBS Summer 2025 DIMACS externship.
 
 An externship is a project facilitated by the Rutgers University MBS program, in which students inside a company under an academic capacity.
 
