@@ -1,11 +1,9 @@
 # DIMEX
-
 Dimex is a library created for all the utilities related to the Rutgers MBS Summer 2025 DIMACS externship.
 
 The project aimed to demonstrate whether interpretable Machine Learning models are able to reach a satisfying level of performance relative to black box models when ran on tabular data. The performance of the interpretable algorithm SPLIT ([paper](https://arxiv.org/abs/2502.15988), [repository](https://github.com/VarunBabbar/SPLIT-ICML/)) was benchmarked against that of XGBoost.
 
 ## Features & Workflow
-
 - **Preprocessing**: Missing-value cleaning, label binarization, categorical encoding, SMOTE, and undersampling
 - **XGBoost toolkit**: Training, model metadata, feature selection, and predictions
 - **SPLIT toolkit**: Training, model metadata, and predictions
@@ -21,6 +19,7 @@ The project aimed to demonstrate whether interpretable Machine Learning models a
 ├── airline-passenger-satisfaction/ # Dataset used
 ├── dimex/
 ├── notebooks/ # Notebooks running dimex with different seed values
+├── results/ # Comparison table of the different results from running XGBoost and SPLIT using different parameters and seed values
 ├── environment.yml # Conda environment file (instead of requirements.txt)
 ├── LICENSE
 ├── README.md
@@ -28,7 +27,6 @@ The project aimed to demonstrate whether interpretable Machine Learning models a
 ```
 
 ## Installation
-
 See [SETUP.md](SETUP.md) for full installation instructions.
 
 ## Usage
@@ -55,6 +53,8 @@ dx.cm(y_test, split_pred[0], cmap='Purples')
 
 Refer to the notebooks for a more detailed guide.
 
-## References
+## Results
+Representative outcomes (3 random seeds) comparing SPLIT against XGBoost on the Airline Passenger Satisfaction dataset: ![Results](results/Results.png)
 
+## References
 Babbar, V., McTavish, H., Rudin, C., Seltzer, M. (2025). Near-Optimal Decision Trees in a SPLIT Second. arXiv preprint arXiv:2502.15988
