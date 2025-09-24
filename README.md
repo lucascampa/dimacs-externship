@@ -16,7 +16,7 @@ The project aimed to demonstrate whether interpretable Machine Learning models a
 4. Final SPLIT iteration
 5. Model comparison
 
-## Project structure
+## Project Structure
 ```
 ├── airline-passenger-satisfaction/ # Dataset used
 ├── dimex/
