@@ -49,7 +49,6 @@ git clone https://github.com/VarunBabbar/SPLIT-ICML.git
 mkdir -p ~/projects
 cp -r "/mnt/c/your/local/path/SPLIT-ICML" ~/projects/
 cd ~/projects/SPLIT-ICML
-pip install split/
 ```
 
 ## 8. Install SPLIT
