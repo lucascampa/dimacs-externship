@@ -5,6 +5,8 @@ An externship is a project facilitated by the Rutgers University MBS program, in
 
 In this project, I worked with DIMACS — Rutgers' Center for Discrete Mathematics and Theoretical Computer Science. Our aim was to demonstrate whether interpretable Machine Learning models are able to reach a satisfying level of performance relative to black box models when ran on tabular data. The performance of the interpretable algorithm SPLIT ([paper](https://arxiv.org/abs/2502.15988), [repository](https://github.com/VarunBabbar/SPLIT-ICML/)) was benchmarked against that of XGBoost.
 
+See the full [write-up](https://medium.com/@lucascampagnaro/i-built-an-end-to-end-interpretable-machine-learning-research-pipeline-0ba67d0ba700) of this project for a deeper dive into the methodology.
+
 ## Features & Workflow
 - **Preprocessing**: Missing-value cleaning, label binarization, categorical encoding, SMOTE, and undersampling
 - **XGBoost toolkit**: Training, model metadata, feature selection, and predictions
@@ -64,3 +66,4 @@ Representative outcomes (3 random seeds) comparing SPLIT against XGBoost on the 
 
 ## References
 Babbar, V., McTavish, H., Rudin, C., Seltzer, M. (2025). Near-Optimal Decision Trees in a SPLIT Second. arXiv preprint arXiv:2502.15988
+Campagnaro, L. (2025, October). _I built an end-to-end interpretable Machine Learning research pipeline_. Medium. https://medium.com/@lucascampagnaro/i-built-an-end-to-end-interpretable-machine-learning-research-pipeline-0ba67d0ba700
