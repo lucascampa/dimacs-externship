@@ -66,4 +66,5 @@ Representative outcomes (3 random seeds) comparing SPLIT against XGBoost on the 
 
 ## References
 Babbar, V., McTavish, H., Rudin, C., Seltzer, M. (2025). Near-Optimal Decision Trees in a SPLIT Second. arXiv preprint arXiv:2502.15988
+
 Campagnaro, L. (2025, October). _I built an end-to-end interpretable Machine Learning research pipeline_. Medium. https://medium.com/@lucascampagnaro/i-built-an-end-to-end-interpretable-machine-learning-research-pipeline-0ba67d0ba700
